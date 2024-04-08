@@ -26,7 +26,7 @@ export const GET = async (request) => {
   }
 };
 
-// GET : /api/properties
+// POST : /api/properties
 export const POST = async (request) => {
   try {
     await connectDB();
