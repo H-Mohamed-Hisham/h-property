@@ -10,6 +10,7 @@ import Footer from "@/components/Footer";
 
 // CSS
 import "react-toastify/dist/ReactToastify.css";
+import "photoswipe/dist/photoswipe.css";
 import "@/assets/styles/globals.css";
 
 export const metadata = {
