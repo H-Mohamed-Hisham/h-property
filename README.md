@@ -13,7 +13,6 @@ Built as part of a **Udemy learning project**, it demonstrates **full-stack deve
 > - All property data, images, and addresses are dummy placeholders.
 > - This is **not a real estate platform**.
 > - Built as part of a **Udemy course** to practice full-stack concepts.
-> - This is a learning project and not intended for production use.
 
 ---
 
@@ -52,6 +51,19 @@ Built as part of a **Udemy learning project**, it demonstrates **full-stack deve
 
 ---
 
+## 📌 Project Purpose
+
+This project was built as part of a Udemy course to learn and practice:
+
+- Next.js App Router concepts.
+- Full-stack development with MongoDB.
+- Authentication via Google OAuth.
+- Image management using Cloudinary.
+- API integration and data fetching.
+- Building a responsive, user-friendly UI with TailwindCSS.
+
+---
+
 ## 🚀 Getting Started
 
 ### 1. Clone the Repository
@@ -69,7 +81,7 @@ npm install
 
 ### 3. Set Up Environment Variables
 
-Create a .env.local file:
+Create a .env file:
 
 ```
 # Next JS
@@ -77,19 +89,19 @@ NEXT_PUBLIC_DOMAIN=http://localhost:3000
 NEXT_PUBLIC_API_DOMAIN=http://localhost:3000/api
 NEXTAUTH_URL=http://localhost:3000
 NEXTAUTH_URL_INTERNAL=http://localhost:3000
-NEXTAUTH_SECRET=<your_secret_message>
+NEXTAUTH_SECRET=your_secret_message
 
 # MongoDB
-MONGODB_URI=<mongo_db_uri>
+MONGODB_URI=mongo_db_uri
 
 # Google
-GOOGLE_CLIENT_ID=<client_id>
-GOOGLE_CLIENT_SECRET=<client_secret>
+GOOGLE_CLIENT_ID=client_id
+GOOGLE_CLIENT_SECRET=client_secret
 
 # Cloudinary
-CLOUDINARY_CLOUD_NAME=<cloud_name>
-CLOUDINARY_API_KEY=<api_key>
-CLOUDINARY_API_SECRET=<api_secret>
+CLOUDINARY_CLOUD_NAME=cloud_name
+CLOUDINARY_API_KEY=api_key
+CLOUDINARY_API_SECRET=api_secret
 ```
 
 ### 4. Run the Development Server
