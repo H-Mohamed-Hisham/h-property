@@ -1,36 +1,103 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🏡 H-Property — Find Your Next Rental Home
 
-## Getting Started
+[![Live Demo](https://img.shields.io/badge/Live_Demo-Visit-green?style=for-the-badge&logo=vercel)](https://h-property.vercel.app/)
+[![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)](https://nextjs.org/)
+[![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)](https://www.mongodb.com/)
+[![TailwindCSS](https://img.shields.io/badge/TailwindCSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
 
-First, run the development server:
+**H-Property** is a **modern web application** designed to help you **find your next rental property** with ease.  
+Built as part of a **Udemy learning project**, it demonstrates **full-stack development skills** using **Next.js App Router** and **MongoDB**, combined with **Cloudinary** for image hosting and **Google authentication** for seamless sign-in.
+
+> ⚠️ **Disclaimer**
+>
+> - All property data, images, and addresses are dummy placeholders.
+> - This is **not a real estate platform**.
+> - Built as part of a **Udemy course** to practice full-stack concepts.
+> - This is a learning project and not intended for production use.
+
+---
+
+## 🔗 Live Demo
+
+🚀 **Try it here** → [https://h-property.vercel.app/](https://h-property.vercel.app/)
+
+---
+
+## ✨ Features
+
+- 🏠 **Property Listings** — Browse available rental properties.
+- 🔍 **Advanced Filters** — Search by location, price, and amenities.
+- 🖼️ **Image Hosting via Cloudinary** — Optimized image storage and delivery.
+- 🔐 **Google Sign-In** — Secure authentication using Google OAuth.
+- 📡 **Next.js API Routes** — Fetch and manage property data efficiently.
+- 📱 **Responsive UI** — Fully optimized for mobile, tablet, and desktop.
+- 🛠️ **Full-Stack Integration** — Built using the **Next.js App Router** and **MongoDB**.
+
+---
+
+## 🖼️ Preview
+
+![H-Property Dashboard](./public/screenshots/home.png)
+
+---
+
+## 🛠️ Tech Stack
+
+- **Framework**: [Next.js App Router](https://nextjs.org/docs/app)
+- **Frontend**: [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) + [TailwindCSS](https://tailwindcss.com/)
+- **Authentication**: Google OAuth
+- **Database**: [MongoDB](https://www.mongodb.com/)
+- **Image Hosting**: [Cloudinary](https://cloudinary.com/)
+- **API Fetching**: Built using **Next.js App Router API routes**
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone the Repository
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/H-Mohamed-Hisham/h-property.git
+cd h-property
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 2. Install Dependencies
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+```bash
+npm install
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### 3. Set Up Environment Variables
 
-## Learn More
+Create a .env.local file:
 
-To learn more about Next.js, take a look at the following resources:
+```
+# Next JS
+NEXT_PUBLIC_DOMAIN=http://localhost:3000
+NEXT_PUBLIC_API_DOMAIN=http://localhost:3000/api
+NEXTAUTH_URL=http://localhost:3000
+NEXTAUTH_URL_INTERNAL=http://localhost:3000
+NEXTAUTH_SECRET=<your_secret_message>
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+# MongoDB
+MONGODB_URI=<mongo_db_uri>
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+# Google
+GOOGLE_CLIENT_ID=<client_id>
+GOOGLE_CLIENT_SECRET=<client_secret>
 
-## Deploy on Vercel
+# Cloudinary
+CLOUDINARY_CLOUD_NAME=<cloud_name>
+CLOUDINARY_API_KEY=<api_key>
+CLOUDINARY_API_SECRET=<api_secret>
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### 4. Run the Development Server
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+```
+npm run dev
+```
+
+Your app will be running at http://localhost:3000
+
+Built with ❤️ using Next.js, TailwindCSS, MongoDB, Cloudinary, and Google OAuth
